@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include nsd_bguarantee *.css
+recursive-include nsd_bguarantee *.csv
+recursive-include nsd_bguarantee *.html
+recursive-include nsd_bguarantee *.ico
+recursive-include nsd_bguarantee *.js
+recursive-include nsd_bguarantee *.json
+recursive-include nsd_bguarantee *.md
+recursive-include nsd_bguarantee *.png
+recursive-include nsd_bguarantee *.py
+recursive-include nsd_bguarantee *.svg
+recursive-include nsd_bguarantee *.txt
+recursive-exclude nsd_bguarantee *.pyc
