@@ -1,6 +1,6 @@
 from . import __version__ as app_version
 
-app_name = "ecs_bguarantee"
+app_name = "nsd_bguarantee"
 app_title = "Ecs Bguarantee"
 app_publisher = "erpcloud.systems"
 app_description = "Bank guarantee"
@@ -13,23 +13,23 @@ app_license = "MIT"
 # ------------------
 doc_events = {
 "Bank Guarantee": {
-	"on_submit": "ecs_bguarantee.ecs_bguarantee.overrides.bank_guarantee.bank_guarantee.on_submit_1",
-	"on_update_after_submit": "ecs_bguarantee.ecs_bguarantee.overrides.bank_guarantee.bank_guarantee.on_update_after_submit_1"
+	"on_submit": "nsd_bguarantee.nsd_bguarantee.overrides.bank_guarantee.bank_guarantee.on_submit_1",
+	"on_update_after_submit": "nsd_bguarantee.nsd_bguarantee.overrides.bank_guarantee.bank_guarantee.on_update_after_submit_1"
 }
 }
 doctype_js = {
-	"Bank Guarantee" : "ecs_bguarantee/overrides/bank_guarantee/bank_guarantee.js"
+	"Bank Guarantee" : "nsd_bguarantee/overrides/bank_guarantee/bank_guarantee.js"
 }
 # include js, css files in header of desk.html
-# app_include_css = "/assets/ecs_bguarantee/css/ecs_bguarantee.css"
-# app_include_js = "/assets/ecs_bguarantee/js/ecs_bguarantee.js"
+# app_include_css = "/assets/nsd_bguarantee/css/nsd_bguarantee.css"
+# app_include_js = "/assets/nsd_bguarantee/js/nsd_bguarantee.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/ecs_bguarantee/css/ecs_bguarantee.css"
-# web_include_js = "/assets/ecs_bguarantee/js/ecs_bguarantee.js"
+# web_include_css = "/assets/nsd_bguarantee/css/nsd_bguarantee.css"
+# web_include_js = "/assets/nsd_bguarantee/js/nsd_bguarantee.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "ecs_bguarantee/public/scss/website"
+# website_theme_scss = "nsd_bguarantee/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -64,14 +64,14 @@ doctype_js = {
 # Installation
 # ------------
 
-# before_install = "ecs_bguarantee.install.before_install"
-# after_install = "ecs_bguarantee.install.after_install"
+# before_install = "nsd_bguarantee.install.before_install"
+# after_install = "nsd_bguarantee.install.after_install"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "ecs_bguarantee.notifications.get_notification_config"
+# notification_config = "nsd_bguarantee.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -110,39 +110,39 @@ doctype_js = {
 
 # scheduler_events = {
 # 	"all": [
-# 		"ecs_bguarantee.tasks.all"
+# 		"nsd_bguarantee.tasks.all"
 # 	],
 # 	"daily": [
-# 		"ecs_bguarantee.tasks.daily"
+# 		"nsd_bguarantee.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"ecs_bguarantee.tasks.hourly"
+# 		"nsd_bguarantee.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"ecs_bguarantee.tasks.weekly"
+# 		"nsd_bguarantee.tasks.weekly"
 # 	]
 # 	"monthly": [
-# 		"ecs_bguarantee.tasks.monthly"
+# 		"nsd_bguarantee.tasks.monthly"
 # 	]
 # }
 
 # Testing
 # -------
 
-# before_tests = "ecs_bguarantee.install.before_tests"
+# before_tests = "nsd_bguarantee.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "ecs_bguarantee.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "nsd_bguarantee.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "ecs_bguarantee.task.get_dashboard_data"
+# 	"Task": "nsd_bguarantee.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -178,6 +178,6 @@ user_data_fields = [
 # --------------------------------
 
 # auth_hooks = [
-# 	"ecs_bguarantee.auth.validate"
+# 	"nsd_bguarantee.auth.validate"
 # ]
 
