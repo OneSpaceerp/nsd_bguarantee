@@ -55,7 +55,7 @@ def on_submit_1(doc, method=None):
 		frappe.throw(_("Enter the Reference Date before submitting."))
 	if not doc.dpaccount and (doc.bank_guarantee_purpose == "Bank Guarantee" or doc.bank_guarantee_purpose == "Deduction"):
 		frappe.throw(_("Select the Insurance Account before submitting."))
-	if doc.bank_guarantee_purpose == "Bank Guarantee" and doc.bg_commission <1:
+	if doc.bank_guarantee_purpose == "Bank Guarantee" and doc.bg_commission <0:
 		frappe.throw(_("Bank Guarantee Commission cannot be zero !"))
 	frappe.db.sql(""" update `tabBank Guarantee` set posting_date = Null where name = %s""", doc.name)
 	frappe.db.commit()
