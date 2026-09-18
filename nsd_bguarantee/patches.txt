@@ -1,2 +1,4 @@
+[pre_model_sync]
+
 [post_model_sync]
 nsd_bguarantee.patches.v1_0.migrate_to_v16
