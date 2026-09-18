@@ -1,0 +1,45 @@
+[project]
+name = "nsd_bguarantee"
+authors = [
+    { name = "Nest Software Development", email = "info@nestsoftware.dev" }
+]
+description = "Bank Guarantee Management for ERPNext"
+requires-python = ">=3.14"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://nestsoftware.dev"
+Repository = "https://github.com/OneSpaceerp/nsd_bguarantee"
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=16.0.0,<17.0.0"
+erpnext = ">=16.0.0,<17.0.0"
+
+[tool.ruff]
+line-length = 110
+target-version = "py314"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+    "F",      # Pyflakes
+    "E", "W", # pycodestyle
+    "I",      # isort
+    "UP",     # pyupgrade
+    "B",      # flake8-bugbear
+    "RUF",    # Ruff-specific rules
+]
+ignore = [
+    "E501",   # Line length handled by formatter
+    "B008",   # Do not perform function call in argument defaults
+]
