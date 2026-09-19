@@ -3,6 +3,8 @@
 
 frappe.ui.form.on("Bank Guarantee", {
 	setup(frm) {
+		frm.add_fetch("bank_account", "account", "account");
+
 		frm.set_query("reference_doctype", () => {
 			return {
 				filters: [["DocType", "name", "in", ["Sales Order", "Purchase Order"]]]
@@ -53,7 +55,9 @@ frappe.ui.form.on("Bank Guarantee", {
 	},
 
 	onload(frm) {
-		frm.set_df_property("reference_doctype", "read_only", 0);
+		if (frm.fields_dict && frm.fields_dict.reference_doctype) {
+			frm.set_df_property("reference_doctype", "read_only", 0);
+		}
 	},
 
 	bank_account(frm) {
@@ -77,6 +81,8 @@ frappe.ui.form.on("Bank Guarantee", {
 			frm.set_value("name_of_beneficiary", frm.doc.party);
 			if (frm.doc.party_type === "Customer") {
 				frm.set_value("customer", frm.doc.party);
+			} else if (frm.doc.party_type === "Supplier") {
+				frm.set_value("supplier", frm.doc.party);
 			}
 		}
 	},

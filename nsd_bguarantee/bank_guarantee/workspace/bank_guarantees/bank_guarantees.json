@@ -2,8 +2,8 @@
  "app": "nsd_bguarantee",
  "category": "Modules",
  "charts": [],
- "content": "[{\"id\":\"hdr_bg\",\"type\":\"header\",\"data\":{\"text\":\"Bank Guarantee Management\",\"level\":4,\"col\":12}},{\"id\":\"card_txn\",\"type\":\"card\",\"data\":{\"card_name\":\"Transactions\",\"col\":4}}]",
- "creation": "2021-08-06 19:19:55.611710",
+ "content": "[{\"id\":\"hdr_bg\",\"type\":\"header\",\"data\":{\"text\":\"Bank Guarantee Management\",\"level\":4,\"col\":12}},{\"id\":\"sc_new_bg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Bank Guarantee\",\"col\":4}},{\"id\":\"sc_bg_list\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Bank Guarantee List\",\"col\":4}},{\"id\":\"sc_bg_rep\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Bank Guarantee Report\",\"col\":4}},{\"id\":\"card_txn\",\"type\":\"card\",\"data\":{\"card_name\":\"Transactions\",\"col\":4}}]",
+ "creation": "2021-08-08 16:26:05.844039",
  "custom_blocks": [],
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -16,7 +16,7 @@
  "indicator_color": "blue",
  "is_default": 0,
  "is_standard": 1,
- "label": "Bank Guarantee",
+ "label": "Bank Guarantees",
  "links": [
   {
    "hidden": 0,
@@ -54,10 +54,10 @@
    "type": "Link"
   }
  ],
- "modified": "2026-09-18 00:00:00.000000",
+ "modified": "2026-09-19 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "Bank Guarantee",
- "name": "Bank Guarantee",
+ "name": "Bank Guarantees",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
@@ -67,7 +67,14 @@
  "sequence_id": 1,
  "shortcuts": [
   {
-   "color": "Grey",
+   "color": "Green",
+   "doc_view": "New",
+   "label": "New Bank Guarantee",
+   "link_to": "Bank Guarantee",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
    "doc_view": "List",
    "label": "Bank Guarantee List",
    "link_to": "Bank Guarantee",
@@ -75,12 +82,12 @@
   },
   {
    "color": "Grey",
-   "doc_view": "List",
+   "doc_view": "Report",
    "label": "Bank Guarantee Report",
    "link_to": "Bank Guarantee Report",
    "type": "Report"
   }
  ],
- "title": "Bank Guarantee",
+ "title": "Bank Guarantees",
  "type": "Workspace"
 }
