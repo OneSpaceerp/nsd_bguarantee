@@ -2,3 +2,4 @@
 
 [post_model_sync]
 nsd_bguarantee.patches.v1_0.migrate_to_v16
+nsd_bguarantee.patches.v1_0.fix_workspace_collision
